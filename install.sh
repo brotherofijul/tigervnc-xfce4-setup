@@ -1,14 +1,11 @@
 #!/bin/bash
 
 if [ "$UID" -eq 0 ]; then
-    echo "LOG: UID terdeteksi sebagai 0 (root). Melanjutkan dengan apt install sudo..."
-    apt install sudo
-    echo "LOG: Perintah apt install sudo telah selesai."
+    apt update && sudo apt upgrade -y
+    apt install sudo -y
 else
-    echo "LOG: UID bukan 0. Melewatkan instalasi sudo."
+    sudo apt update && sudo apt upgrade -y
 fi
-  
-sudo apt update && sudo apt upgrade -y
 
 sudo apt install dbus-x11 tigervnc-standalone-server xfce4 xfce4-goodies -y
 
