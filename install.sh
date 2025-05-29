@@ -12,5 +12,6 @@ unset DBUS_SESSION_BUS_ADDRESS
 dbus-launch --exit-with-session startxfce4
 EOL
 chmod +x ~/.vnc/xstartup
-echo "# Ketik perintah:"
+clear
+echo "### Ketik Perintah ###"
 echo " vncserver"
