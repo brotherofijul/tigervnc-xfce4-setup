@@ -5,14 +5,20 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
 
 ## Instalasi Manual
 1. Update
-   ```sudo apt update && apt upgrade -y```
+   ```
+   sudo apt update && apt upgrade -y
+   ```
    Jika anda pengguna Proot-distro
-   ```apt install sudo sudo apt update && apt upgrade -y```
+   ```
+   apt install sudo sudo apt update && apt upgrade -y
+   ```
 
-2. Instalasi
-   ```sudo apt install dbus-x11 tigervnc-standalone-server xfce4 xfce4-goodies```
+3. Instalasi
+   ```
+   sudo apt install dbus-x11 tigervnc-standalone-server xfce4 xfce4-goodies
+   ```
 
-3. Pengaturan VNC
+5. Pengaturan VNC
    ```
    mkdir -p ~/.vnc
    cat <<EOL > ~/.vnc/xstartup
@@ -25,7 +31,7 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
    sudo chmod +x ~/.vnc/xstartup
    ```
 
-4. Jalankan VNC
+6. Jalankan VNC
    ```
    vncserver
    vncserver -list
@@ -37,4 +43,6 @@ Selamat! Ubuntu anda memiliki GUI dan dapat terkoneksi oleh VNC
 
 ## Instalasi dengan Bash
 1. Klon repositori dan eksekusi
-   ```curl -o- <url>| bash
+   ```
+   curl -o- <url>| bash
+   ```
