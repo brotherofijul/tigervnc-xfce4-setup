@@ -10,7 +10,7 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
    ```
    Jika anda pengguna Proot-distro
    ```
-   apt install sudo sudo apt update && apt upgrade -y
+   apt install sudo && sudo apt update && apt upgrade -y
    ```
 
 3. Instalasi
@@ -36,8 +36,6 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
    vncserver
    vncserver -list
    ```
-
-Selamat! Ubuntu anda memiliki GUI dan dapat terkoneksi oleh VNC
 
 
 
