@@ -20,10 +20,15 @@ unset DBUS_SESSION_BUS_ADDRESS
 dbus-launch --exit-with-session startxfce4
 EOL
 
-sudo chmod +x ~/.vnc/xstartup
+chmod +x ~/.vnc/xstartup
 
-vncpasswd
-
-vncserver
-
-vncserver -list
+echo "Ketik perintah:"
+echo ""
+echo " vncserver"
+echo "Memulai sesi"
+echo " vncserver :1"
+echo "Memulai sesi ke-1"
+echo " vncserver -list"
+echo "Mengecek sesi"
+echo " vncserver -kill :1"
+echo "menonaktifkan sesi ke-1"
