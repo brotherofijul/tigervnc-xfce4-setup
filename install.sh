@@ -1,7 +1,11 @@
 #!/bin/bash
 
 if [ "$UID" -eq 0 ]; then
+    echo "LOG: UID terdeteksi sebagai 0 (root). Melanjutkan dengan apt install sudo..."
     apt install sudo
+    echo "LOG: Perintah apt install sudo telah selesai."
+else
+    echo "LOG: UID bukan 0. Melewatkan instalasi sudo."
 fi
   
 sudo apt update && sudo apt upgrade -y
