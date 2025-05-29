@@ -42,5 +42,5 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
 ## Instalasi dengan Bash
 1. Klon repositori dan eksekusi
    ```
-   curl -o- <url>| bash
+   curl -o- https://raw.githubusercontent.com/brotherofijul/tigervnc-xfce4-setup/main/install.sh | bash
    ```
