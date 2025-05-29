@@ -1,21 +1,17 @@
-# Tigervnc XFCE4 Setup - Ubuntu v24.04
+# Install GUI Proot-distro Ubuntu v24.04
 
-cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubuntu
+cara menginstal GUI dengan XFCE4 dan Tigervnc di Proot-distro Ubuntu
 
 
 ## Instalasi Manual
 1. Update
-   ```
-   sudo apt update && apt upgrade -y
-   ```
-   Jika anda pengguna Proot-distro
    ```
    apt install sudo && sudo apt update && apt upgrade -y
    ```
 
 3. Instalasi
    ```
-   sudo apt install dbus-x11 tigervnc-standalone-server xfce4 xfce4-goodies
+   apt install dbus-x11 tigervnc-standalone-server xfce4 xfce4-goodies
    ```
 
 5. Pengaturan VNC
@@ -28,7 +24,7 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
 
    dbus-launch --exit-with-session startxfce4
    EOL
-   sudo chmod +x ~/.vnc/xstartup
+   chmod +x ~/.vnc/xstartup
    ```
 
 6. Jalankan VNC
@@ -36,10 +32,8 @@ cara menginstal dan menggunakan tigervnc di Ubuntu Server atau Proot-distro Ubun
    vncserver
    vncserver -list
    ```
-
-
-
-## Instalasi dengan Bash
+   
+## Instalasi Otomatis
 1. Klon repositori dan eksekusi
    ```
    curl -o- https://raw.githubusercontent.com/brotherofijul/tigervnc-xfce4-setup/main/install.sh | bash
