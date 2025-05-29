@@ -22,6 +22,8 @@ EOL
 
 sudo chmod +x ~/.vnc/xstartup
 
+vncpasswd
+
 vncserver
 
 vncserver -list
